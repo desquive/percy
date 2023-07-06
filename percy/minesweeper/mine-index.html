@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minesweeper</title>
+        <link rel="stylesheet" href="mine-index.css">
+        <script src="minesweeper.js"></script>
+    </head>
+
+    <body>
+        <h1>Minesweeper 💣</h1>
+        <h3>Choose a Difficulty:</h3>
+        <div class="difficulties">
+            <a href="minesweeper.html" onclick="setCSS(1);">
+                <button class="diff">Easy</button>
+            </a>
+            10 mines - 9x9
+            <br>
+            <a href="minesweeper.html" onclick="setCSS(2);">
+                <button class="diff">Normal</button>
+            </a>
+            40 mines - 16x16
+            <br>
+            <a href="minesweeper.html" onclick="setCSS(3);">
+                <button class="diff">Hard</button>
+            </a>
+            99 mines - 30x16
+        </div>
+    </body>
+</html>

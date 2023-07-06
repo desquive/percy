@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minesweeper Game</title>
+        <link rel="stylesheet" href="minesweeper.css">
+        <link rel="stylesheet" class="size" href="">
+        <script src="minesweeper.js"></script>
+    </head>
+
+    <body onload="findCSS();">
+        <h1>
+            Mines: <span id="mines-count">0</span>
+        </h1>
+        <div id="container">
+            <div id="game">
+                <div id="board">
+                </div>
+                <br>
+                <button id="flag">🚩</button>
+            </div>
+            <div id="stats">
+                <div id="time">
+                    <span id="hr">00</span><span>:</span><span id="min">00</span><span>:</span><span id="sec">00</span>
+                </div>
+                <br>
+                <a href="index.html">
+                    <button id="newgame" class="sidebar">New Game</button>
+                </a>
+                <br>
+                <button id="reset" class="sidebar" onclick="window.location.reload();">Reset Board</button>
+            </div>
+        </div>
+    </body>
+</html>
