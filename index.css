@@ -1,0 +1,220 @@
+html{
+    scroll-behavior: smooth;
+    scroll-margin-top: 200px;
+}
+.main{
+    width: 100%;
+    height: 100%; 
+    margin-right: -10px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.flexbox{
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.left-panel{
+    /* background-color: red; */
+    top: 0; 
+}
+
+.left-text{
+    margin-left: 75px;
+    margin-top: 75px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Lato',sans-serif;
+    padding-right: 35px; 
+
+    font-weight: 300;
+}
+.left-text h3{
+    font-weight: 375;
+}
+
+.tags{
+    margin-top: 40px;
+}
+
+.name-heading{
+    font-size: x-large;
+}
+
+i{
+    opacity: 0.3; 
+}
+
+i:hover{
+    opacity: 0.8; 
+}
+
+.effect {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.effect::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+}
+
+.effect:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.embedded{
+    font-weight: 400; 
+}
+
+.right-text{
+    margin-top: 75px; 
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Lato',sans-serif;
+    font-weight: 200;
+}
+
+.right-text h3{
+    font-weight: 300; 
+}
+
+.project-box{
+    margin-bottom: 20px; 
+    border: 1px solid transparent; 
+    position:relative;
+}
+
+.project-box:hover{
+    background-color: rgba(0,0,0,0.05);
+}
+
+.project-box:hover h3{
+    font-weight: 400;
+}
+
+.project-box:hover h3::after{
+    transition: transform 0.65s ease-out;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.project-box img{
+    height: auto; 
+    width: 139px; 
+    float:left; 
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.project-text{
+    margin-left: 139px; 
+    padding-left: 25px; 
+    padding-bottom: 5px; 
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.project-text h3{
+    margin-bottom: 7.5px; 
+    margin-top: 3px; 
+}
+
+#resume{
+    font-weight: 300;
+}
+
+#edu h3{
+    margin-bottom: -5px; 
+}
+
+#contact{
+    text-align: center;
+    justify-content: center;
+}
+
+#contact button{
+    background: transparent;
+    color: black; 
+    border: none; 
+    font-size: 20px; 
+    margin-top: 15px; 
+}
+
+#contact button::after{
+    height: 2px;
+}
+
+#footer{
+    margin-top: 100px; 
+    text-align: center;
+}
+
+#footer a{
+    font-weight: 400;
+}
+
+#footer a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 1023px){
+    .left-panel{
+        width: 100%; 
+        text-align: center;
+    }
+    .right-panel{
+        width: 100%; 
+    }
+    .right-text{
+        margin-left: 20px; 
+        margin-right: 20px;
+    }
+    .mytags{
+        margin-right: 10px;
+    }
+    .mylinksdiv{
+        margin-top: 10px; 
+    }
+}
+
+@media(min-width: 1024px){
+    .flexbox{
+        margin-top: -10px;
+        padding-left: 96px;
+        padding-right: 96px; 
+    }
+    .left-panel{
+        height: 100vh; 
+        position: sticky; 
+        width: 50%; 
+    }
+    .right-panel{
+        width: 50%; 
+    }
+    .mytags{
+        margin-right: 100vh; 
+        margin-bottom: 30px; 
+    }
+}
+
+/* @media(max-width: 768px){
+    .right-panel{
+        height: 150rem; 
+    }
+}  */
