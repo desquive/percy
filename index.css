@@ -178,6 +178,9 @@ a{
         width: 100%; 
         text-align: center;
     }
+    .left-text{
+        margin-left: 0; 
+    }
     .right-panel{
         width: 100%; 
     }
