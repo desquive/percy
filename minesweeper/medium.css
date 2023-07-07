@@ -1,0 +1,12 @@
+body{
+    text-align: center; 
+}
+#board{
+    width: 800px;
+    height: 800px; 
+    border: 10px solid darkgray; 
+    background: lightgray;
+    margin: 0 auto; 
+    display: flex; 
+    flex-wrap: wrap;
+}
