@@ -36,6 +36,14 @@ a{
     font-weight: 375;
 }
 
+.edu-head{
+    margin-bottom:5px;
+}
+
+.grad-date{
+    font-size: 14px;
+}
+
 .tags{
     margin-top: 40px;
 }
@@ -139,7 +147,7 @@ a{
     font-weight: 300;
 }
 
-#edu h3{
+#exp h3{
     margin-bottom: -5px; 
 }
 
